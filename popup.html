@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecureVault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- PIN verification screen -->
+    <div id="pinScreen" class="screen active">
+      <h2>Enter PIN</h2>
+      <div class="pin-input">
+        <input type="password" id="pinInput" maxlength="6">
+        <button id="verifyPin">Unlock</button>
+      </div>
+      <div class="error-message" id="pinError"></div>
+    </div>
+    
+    <!-- Credentials list screen -->
+    <div id="credentialsScreen" class="screen">
+      <h2>Saved Credentials</h2>
+      <div id="credentialsList"></div>
+      <button id="lockButton">Lock</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

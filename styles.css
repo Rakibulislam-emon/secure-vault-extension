@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #4285f4;
+  --secondary-color: #34a853;
+  --danger-color: #ea4335;
+  --background-color: #ffffff;
+  --text-color: #202124;
+  --border-color: #dadce0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 350px;
+  padding: 16px;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+input[type="password"], 
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.error-message {
+  color: var(--danger-color);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.credential-item {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.site {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.password-field input {
+  flex: 1;
+  margin: 0 8px 0 0;
+}
+
+.password-field button,
+.delete-credential {
+  padding: 6px 10px;
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.show-password {
+  background-color: var(--secondary-color);
+}
+
+.copy-password {
+  background-color: var(--primary-color);
+}
+
+.delete-credential {
+  background-color: var(--danger-color);
+  width: 100%;
+  margin-top: 8px;
+}
+
+#lockButton {
+  width: 100%;
+  margin-top: 16px;
+}
